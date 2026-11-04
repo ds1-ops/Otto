@@ -11,6 +11,8 @@
 
 # Project files written into the repo (example_project writes "Otto examples.otto" here)
 *.otto
+# ...except the worked example that ships with the repo.
+!/examples/*.otto
 
 # Claude Code local overrides
 .claude/settings.local.json

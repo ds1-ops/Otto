@@ -1,8 +1,48 @@
 # Otto
 
+[![CI](https://github.com/ds1-ops/Otto---Scientific-Plotting-Software/actions/workflows/ci.yml/badge.svg)](https://github.com/ds1-ops/Otto---Scientific-Plotting-Software/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
 A GraphPad Prism–style plotting app written in Rust: dark UI, publication-ready
 vector graphs, and full Claude/MCP integration. Every button is also an MCP
 tool, so Claude can build, adjust and export graphs while you watch.
+
+> **Windows only.** Otto uses the Win32 API for the clipboard, EMF export and
+> window placement, and finds R through the Windows registry. It does not build
+> or run on macOS or Linux today.
+
+![A final graph with a one-way ANOVA drawn on it](docs/images/final-graph.png)
+
+Statistics belong to a final graph, which keeps a locked copy of its data, so the
+brackets can never drift out of step with the numbers underneath them.
+
+![The data table, with columns highlighted and the graph types to make from them](docs/images/data-table.png)
+
+One multivariable table feeds every graph: highlight the columns you want and pick
+a graph type.
+
+![The import wizard, showing a title line skipped and a two-row header joined](docs/images/import-wizard.png)
+
+Importing shows what each row is and what each column would be called, so a title
+line, a two-row header or a guessed-wrong separator is sorted out before anything
+lands in the table.
+
+## Installing
+
+**If you just want to use Otto**, download the latest
+[release](https://github.com/ds1-ops/Otto---Scientific-Plotting-Software/releases):
+`otto.exe` runs on its own, and `otto.mcpb` is the Claude Desktop extension.
+Nothing else to build.
+
+Statistics additionally need **R** (4.x). Otto finds it through the registry or
+under `C:\Program Files\R`, and the first run of any test installs Otto's own R
+packages into `~/.otto` from a pinned CRAN snapshot, so every installation
+computes with the same versions. Install R from
+[CRAN](https://cran.r-project.org) (or `winget install RProject.R`), then open
+*Analyze → Statistics engine → Set up*. Everything except statistics works
+without R.
+
+**To build from source**, see [Build and run](#build-and-run-vs-code) below.
 
 ## How Otto differs from Prism
 
@@ -90,8 +130,10 @@ Prism's tabs.
 
 ## Build and run (VS Code)
 
-Prerequisites: Rust (stable, MSVC toolchain) and VS Code with the recommended
-extensions (rust-analyzer, C/C++ for debugging).
+Prerequisites: Windows, Rust (stable, MSVC toolchain, 1.85 or newer) and VS Code
+with the recommended extensions (rust-analyzer, C/C++ for debugging). R is needed
+only for the statistics; without it the tests that compute skip themselves with a
+note instead of failing.
 
 ```bash
 cargo run -p otto-app -- data/data.xlsx
@@ -169,3 +211,18 @@ action and a Claude tool. A test asserts that the two lists are identical.
 
 Adding a graph type means: a new `GraphKind` variant (otto-core), a layout case in
 `otto-plot/src/draw.rs` and a template in `rcode.rs`. The UI and MCP pick it up automatically.
+
+## Examples
+
+[`examples/`](examples/) holds seven synthetic experiments, the Otto project built
+from them and what it exported: vector graphs, the plotted data and the equivalent
+R code. `data/` holds the smaller tables the tests and the app's own example project
+use. Neither contains real measurements.
+
+## License
+
+MIT, see [LICENSE](LICENSE).
+
+Otto lays out what R computes. The statistics come from R and its packages, which
+carry their own licenses, and Otto installs them into its own library rather than
+bundling them.

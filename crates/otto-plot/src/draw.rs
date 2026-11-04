@@ -952,7 +952,7 @@ fn clip_polyline(pts: &[(f64, f64)], f: Frame) -> Vec<Vec<(f64, f64)>> {
                 }
             }
         }
-        (t0 <= t1).then(|| ((a.0 + t0 * dx, a.1 + t0 * dy), (a.0 + t1 * dx, a.1 + t1 * dy)))
+        (t0 <= t1).then_some(((a.0 + t0 * dx, a.1 + t0 * dy), (a.0 + t1 * dx, a.1 + t1 * dy)))
     };
     let mut out = Vec::new();
     let mut cur: Vec<(f64, f64)> = Vec::new();
@@ -1054,42 +1054,6 @@ fn legend(data: &PlotData, spec: &GraphSpec, theme: &Theme, lay: &Layout) -> Vec
     items
 }
 
-#[cfg(test)]
-mod tests {
-    use super::*;
-
-    #[test]
-    fn lines_stop_at_the_edge_of_the_plot_area() {
-        let f = Frame { left: 0.0, top: 0.0, width: 100.0, height: 100.0 };
-        // Leaves through the right edge and never comes back.
-        let pieces = clip_polyline(&[(10.0, 50.0), (90.0, 50.0), (150.0, 50.0), (200.0, 60.0)], f);
-        assert_eq!(pieces, vec![vec![(10.0, 50.0), (90.0, 50.0), (100.0, 50.0)]]);
-        // Both ends outside, but the segment crosses the area.
-        let pieces = clip_polyline(&[(-50.0, 50.0), (150.0, 50.0)], f);
-        assert_eq!(pieces, vec![vec![(0.0, 50.0), (100.0, 50.0)]]);
-        // Out and back in: two pieces.
-        let pieces = clip_polyline(&[(50.0, 50.0), (50.0, 150.0), (60.0, 50.0)], f);
-        assert_eq!(pieces.len(), 2);
-        assert!(pieces.iter().flatten().all(|p| p.1 <= 100.0 + 1e-6));
-    }
-
-    #[test]
-    fn swarm_is_symmetric_and_non_overlapping() {
-        let xs = swarm(&[10.0, 10.0], 3.5, 20.0);
-        assert!((xs[0] + xs[1]).abs() < 1e-9 && (xs[0] - xs[1]).abs() >= 3.4);
-        let ys = [5.0, 5.2, 5.1, 9.0, 12.0];
-        let xs = swarm(&ys, 3.5, 50.0);
-        for i in 0..ys.len() {
-            for j in i + 1..ys.len() {
-                let d = ((xs[i] - xs[j]).powi(2) + (ys[i] - ys[j]).powi(2)).sqrt();
-                assert!(d > 3.0, "points {i} and {j} overlap");
-            }
-        }
-        let xs = swarm(&[1.0; 10], 3.5, 5.0);
-        assert!(xs.iter().all(|x| x.abs() <= 5.0 + 1e-9));
-    }
-}
-
 /// A box plot: the quartile box with the median, the whiskers, and the outliers beyond
 /// them (`y` maps a value to a pixel row).
 fn box_items(
@@ -1174,3 +1138,40 @@ fn violin_items(values: &[f64], cx: f64, bw: f64, fill: Color, stroke: Stroke, y
     ];
     (items, Vec::new())
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn lines_stop_at_the_edge_of_the_plot_area() {
+        let f = Frame { left: 0.0, top: 0.0, width: 100.0, height: 100.0 };
+        // Leaves through the right edge and never comes back.
+        let pieces = clip_polyline(&[(10.0, 50.0), (90.0, 50.0), (150.0, 50.0), (200.0, 60.0)], f);
+        assert_eq!(pieces, vec![vec![(10.0, 50.0), (90.0, 50.0), (100.0, 50.0)]]);
+        // Both ends outside, but the segment crosses the area.
+        let pieces = clip_polyline(&[(-50.0, 50.0), (150.0, 50.0)], f);
+        assert_eq!(pieces, vec![vec![(0.0, 50.0), (100.0, 50.0)]]);
+        // Out and back in: two pieces.
+        let pieces = clip_polyline(&[(50.0, 50.0), (50.0, 150.0), (60.0, 50.0)], f);
+        assert_eq!(pieces.len(), 2);
+        assert!(pieces.iter().flatten().all(|p| p.1 <= 100.0 + 1e-6));
+    }
+
+    #[test]
+    fn swarm_is_symmetric_and_non_overlapping() {
+        let xs = swarm(&[10.0, 10.0], 3.5, 20.0);
+        assert!((xs[0] + xs[1]).abs() < 1e-9 && (xs[0] - xs[1]).abs() >= 3.4);
+        let ys = [5.0, 5.2, 5.1, 9.0, 12.0];
+        let xs = swarm(&ys, 3.5, 50.0);
+        for i in 0..ys.len() {
+            for j in i + 1..ys.len() {
+                let d = ((xs[i] - xs[j]).powi(2) + (ys[i] - ys[j]).powi(2)).sqrt();
+                assert!(d > 3.0, "points {i} and {j} overlap");
+            }
+        }
+        let xs = swarm(&[1.0; 10], 3.5, 5.0);
+        assert!(xs.iter().all(|x| x.abs() <= 5.0 + 1e-9));
+    }
+}
+

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="68.659mm" height="38.641mm" viewBox="0 0 194.624 109.533">
+<g id="axes">
+  <polyline points="27.5,3.505 27.5,88.545 155.059,88.545" fill="none" stroke="#000000" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"/>
+</g>
+<g id="y-axis">
+  <line x1="24.5" y1="88.545" x2="27.5" y2="88.545" stroke="#000000" stroke-width="1" stroke-linecap="butt"/>
+  <text x="23" y="91.05" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-weight="bold" font-size="7" text-anchor="end" fill="#000000">0</text>
+  <line x1="24.5" y1="60.198" x2="27.5" y2="60.198" stroke="#000000" stroke-width="1" stroke-linecap="butt"/>
+  <text x="23" y="62.704" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-weight="bold" font-size="7" text-anchor="end" fill="#000000">50</text>
+  <line x1="24.5" y1="31.852" x2="27.5" y2="31.852" stroke="#000000" stroke-width="1" stroke-linecap="butt"/>
+  <text x="23" y="34.357" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-weight="bold" font-size="7" text-anchor="end" fill="#000000">100</text>
+  <line x1="24.5" y1="3.505" x2="27.5" y2="3.505" stroke="#000000" stroke-width="1" stroke-linecap="butt"/>
+  <text x="23" y="6.011" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-weight="bold" font-size="7" text-anchor="end" fill="#000000">150</text>
+  <text transform="translate(7.337,46.025) rotate(-90)" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-weight="bold" font-size="7" text-anchor="middle" fill="#000000">Viability (%)</text>
+</g>
+<g id="x-axis">
+  <line x1="27.5" y1="88.545" x2="27.5" y2="91.545" stroke="#000000" stroke-width="1" stroke-linecap="butt"/>
+  <text x="27.5" y="98.055" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-weight="bold" font-size="7" text-anchor="middle" fill="#000000">0</text>
+  <line x1="53.011" y1="88.545" x2="53.011" y2="91.545" stroke="#000000" stroke-width="1" stroke-linecap="butt"/>
+  <text x="53.011" y="98.055" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-weight="bold" font-size="7" text-anchor="middle" fill="#000000">1</text>
+  <line x1="78.523" y1="88.545" x2="78.523" y2="91.545" stroke="#000000" stroke-width="1" stroke-linecap="butt"/>
+  <text x="78.523" y="98.055" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-weight="bold" font-size="7" text-anchor="middle" fill="#000000">2</text>
+  <line x1="104.035" y1="88.545" x2="104.035" y2="91.545" stroke="#000000" stroke-width="1" stroke-linecap="butt"/>
+  <text x="104.035" y="98.055" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-weight="bold" font-size="7" text-anchor="middle" fill="#000000">3</text>
+  <line x1="129.547" y1="88.545" x2="129.547" y2="91.545" stroke="#000000" stroke-width="1" stroke-linecap="butt"/>
+  <text x="129.547" y="98.055" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-weight="bold" font-size="7" text-anchor="middle" fill="#000000">4</text>
+  <line x1="155.059" y1="88.545" x2="155.059" y2="91.545" stroke="#000000" stroke-width="1" stroke-linecap="butt"/>
+  <text x="155.059" y="98.055" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-weight="bold" font-size="7" text-anchor="middle" fill="#000000">5</text>
+  <text x="91.279" y="107.05" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-weight="bold" font-size="7" text-anchor="middle" fill="#000000">log[Cmpd A] (nM)</text>
+</g>
+<g id="fits">
+  <polyline points="27.5,31.188 28.141,31.196 28.782,31.205 29.423,31.215 30.064,31.225 30.705,31.236 31.346,31.248 31.987,31.261 32.628,31.274 33.269,31.289 33.91,31.304 34.551,31.321 35.192,31.339 35.833,31.358 36.474,31.379 37.115,31.401 37.756,31.424 38.397,31.449 39.038,31.476 39.679,31.505 40.32,31.536 40.961,31.569 41.602,31.604 42.243,31.642 42.884,31.683 43.525,31.726 44.166,31.772 44.807,31.822 45.448,31.875 46.089,31.931 46.73,31.992 47.371,32.057 48.012,32.126 48.653,32.2 49.294,32.279 49.935,32.363 50.576,32.454 51.217,32.55 51.858,32.653 52.499,32.763 53.14,32.88 53.781,33.004 54.422,33.138 55.063,33.28 55.704,33.431 56.345,33.592 56.986,33.764 57.627,33.946 58.268,34.14 58.909,34.347 59.55,34.567 60.191,34.8 60.832,35.047 61.473,35.31 62.114,35.589 62.755,35.884 63.396,36.196 64.037,36.527 64.678,36.876 65.319,37.245 65.96,37.634 66.601,38.044 67.242,38.477 67.883,38.931 68.524,39.409 69.165,39.91 69.806,40.436 70.447,40.986 71.088,41.561 71.729,42.161 72.37,42.787 73.011,43.438 73.652,44.115 74.293,44.816 74.934,45.543 75.575,46.294 76.216,47.069 76.857,47.867 77.498,48.687 78.139,49.528 78.78,50.389 79.421,51.268 80.062,52.163 80.703,53.074 81.344,53.998 81.985,54.933 82.626,55.877 83.267,56.828 83.908,57.784 84.549,58.743 85.19,59.701 85.831,60.658 86.472,61.61 87.113,62.556 87.754,63.493 88.395,64.419 89.036,65.333 89.677,66.232 90.318,67.115 90.959,67.979 91.6,68.824 92.241,69.649 92.882,70.452 93.523,71.231 94.164,71.988 94.805,72.72 95.446,73.427 96.087,74.108 96.728,74.765 97.369,75.396 98.01,76.002 98.651,76.582 99.292,77.137 99.933,77.668 100.574,78.174 101.215,78.657 101.856,79.116 102.497,79.553 103.138,79.968 103.779,80.362 104.42,80.735 105.061,81.088 105.702,81.422 106.343,81.739 106.984,82.037 107.625,82.319 108.266,82.585 108.907,82.836 109.548,83.072 110.189,83.294 110.83,83.504 111.471,83.7 112.112,83.885 112.753,84.059 113.394,84.222 114.035,84.376 114.676,84.52 115.317,84.655 115.958,84.781 116.599,84.9 117.24,85.011 117.881,85.115 118.522,85.213 119.163,85.304 119.804,85.39 120.445,85.47 121.086,85.545 121.727,85.615 122.368,85.681 123.009,85.742 123.65,85.8 124.291,85.854 124.932,85.904 125.573,85.951 126.214,85.995 126.855,86.036 127.496,86.074 128.137,86.11 128.778,86.144 129.419,86.175 130.06,86.204 130.701,86.231 131.342,86.257 131.983,86.281 132.624,86.303 133.265,86.324 133.906,86.343 134.547,86.361 135.188,86.378 135.829,86.394 136.47,86.409 137.111,86.423 137.752,86.436 138.393,86.448 139.034,86.459 139.675,86.469 140.316,86.479 140.957,86.488 141.598,86.497 142.239,86.505 142.88,86.512 143.521,86.519 144.162,86.526 144.803,86.532 145.444,86.537 146.085,86.543 146.726,86.548 147.367,86.552 148.008,86.556 148.649,86.56 149.29,86.564 149.931,86.568 150.572,86.571 151.213,86.574 151.854,86.577 152.495,86.579 153.136,86.582 153.777,86.584 154.418,86.586 155.059,86.588" fill="none" stroke="#E64B35" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"/>
+  <polyline points="27.5,32.847 28.141,32.849 28.782,32.852 29.423,32.854 30.064,32.857 30.705,32.86 31.346,32.863 31.987,32.866 32.628,32.869 33.269,32.873 33.91,32.877 34.551,32.881 35.192,32.885 35.833,32.89 36.474,32.895 37.115,32.9 37.756,32.906 38.397,32.912 39.038,32.918 39.679,32.925 40.32,32.932 40.961,32.939 41.602,32.947 42.243,32.955 42.884,32.964 43.525,32.974 44.166,32.984 44.807,32.995 45.448,33.006 46.089,33.018 46.73,33.031 47.371,33.044 48.012,33.059 48.653,33.074 49.294,33.09 49.935,33.107 50.576,33.126 51.217,33.145 51.858,33.165 52.499,33.187 53.14,33.21 53.781,33.235 54.422,33.26 55.063,33.288 55.704,33.317 56.345,33.348 56.986,33.381 57.627,33.416 58.268,33.452 58.909,33.492 59.55,33.533 60.191,33.577 60.832,33.623 61.473,33.672 62.114,33.725 62.755,33.78 63.396,33.838 64.037,33.9 64.678,33.966 65.319,34.035 65.96,34.109 66.601,34.187 67.242,34.269 67.883,34.356 68.524,34.448 69.165,34.545 69.806,34.648 70.447,34.757 71.088,34.872 71.729,34.993 72.37,35.121 73.011,35.256 73.652,35.399 74.293,35.549 74.934,35.708 75.575,35.875 76.216,36.051 76.857,36.236 77.498,36.431 78.139,36.636 78.78,36.852 79.421,37.079 80.062,37.317 80.703,37.567 81.344,37.829 81.985,38.104 82.626,38.392 83.267,38.693 83.908,39.008 84.549,39.337 85.19,39.681 85.831,40.04 86.472,40.414 87.113,40.804 87.754,41.209 88.395,41.63 89.036,42.067 89.677,42.521 90.318,42.99 90.959,43.476 91.6,43.978 92.241,44.496 92.882,45.03 93.523,45.58 94.164,46.144 94.805,46.724 95.446,47.318 96.087,47.926 96.728,48.547 97.369,49.181 98.01,49.826 98.651,50.482 99.292,51.148 99.933,51.823 100.574,52.506 101.215,53.196 101.856,53.891 102.497,54.59 103.138,55.293 103.779,55.998 104.42,56.703 105.061,57.408 105.702,58.111 106.343,58.811 106.984,59.506 107.625,60.197 108.266,60.88 108.907,61.556 109.548,62.223 110.189,62.88 110.83,63.526 111.471,64.161 112.112,64.783 112.753,65.392 113.394,65.988 114.035,66.569 114.676,67.135 115.317,67.686 115.958,68.222 116.599,68.741 117.24,69.245 117.881,69.732 118.522,70.203 119.163,70.658 119.804,71.097 120.445,71.52 121.086,71.926 121.727,72.317 122.368,72.693 123.009,73.053 123.65,73.398 124.291,73.729 124.932,74.046 125.573,74.348 126.214,74.637 126.855,74.913 127.496,75.177 128.137,75.428 128.778,75.667 129.419,75.895 130.06,76.112 130.701,76.318 131.342,76.514 131.983,76.7 132.624,76.877 133.265,77.045 133.906,77.204 134.547,77.355 135.188,77.499 135.829,77.635 136.47,77.763 137.111,77.885 137.752,78.001 138.393,78.11 139.034,78.213 139.675,78.311 140.316,78.404 140.957,78.491 141.598,78.574 142.239,78.652 142.88,78.726 143.521,78.796 144.162,78.862 144.803,78.924 145.444,78.983 146.085,79.038 146.726,79.091 147.367,79.14 148.008,79.187 148.649,79.231 149.29,79.273 149.931,79.312 150.572,79.349 151.213,79.384 151.854,79.417 152.495,79.448 153.136,79.477 153.777,79.505 154.418,79.531 155.059,79.556" fill="none" stroke="#4DBBD5" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"/>
+</g>
+<g id="error-bars">
+  <line x1="27.5" y1="30.583" x2="27.5" y2="30.366" stroke="#E64B35" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="26" y1="30.583" x2="29" y2="30.583" stroke="#E64B35" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="26" y1="30.366" x2="29" y2="30.366" stroke="#E64B35" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="45.332" y1="33.16" x2="45.332" y2="32.18" stroke="#E64B35" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="43.832" y1="33.16" x2="46.832" y2="33.16" stroke="#E64B35" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="43.832" y1="32.18" x2="46.832" y2="32.18" stroke="#E64B35" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="60.69" y1="35.959" x2="60.69" y2="33.414" stroke="#E64B35" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="59.19" y1="35.959" x2="62.19" y2="35.959" stroke="#E64B35" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="59.19" y1="33.414" x2="62.19" y2="33.414" stroke="#E64B35" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="76.051" y1="48.353" x2="76.051" y2="46.46" stroke="#E64B35" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="74.551" y1="48.353" x2="77.551" y2="48.353" stroke="#E64B35" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="74.551" y1="46.46" x2="77.551" y2="46.46" stroke="#E64B35" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="91.409" y1="68.508" x2="91.409" y2="66.908" stroke="#E64B35" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="89.909" y1="68.508" x2="92.909" y2="68.508" stroke="#E64B35" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="89.909" y1="66.908" x2="92.909" y2="66.908" stroke="#E64B35" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="106.507" y1="83.849" x2="106.507" y2="81.75" stroke="#E64B35" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="105.007" y1="83.849" x2="108.007" y2="83.849" stroke="#E64B35" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="105.007" y1="81.75" x2="108.007" y2="81.75" stroke="#E64B35" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="121.868" y1="88.308" x2="121.868" y2="85.051" stroke="#E64B35" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="120.368" y1="88.308" x2="123.368" y2="88.308" stroke="#E64B35" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="120.368" y1="85.051" x2="123.368" y2="85.051" stroke="#E64B35" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="137.226" y1="86.243" x2="137.226" y2="83.628" stroke="#E64B35" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="135.726" y1="86.243" x2="138.726" y2="86.243" stroke="#E64B35" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="135.726" y1="83.628" x2="138.726" y2="83.628" stroke="#E64B35" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="27.5" y1="34.261" x2="27.5" y2="32.723" stroke="#4DBBD5" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="26" y1="34.261" x2="29" y2="34.261" stroke="#4DBBD5" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="26" y1="32.723" x2="29" y2="32.723" stroke="#4DBBD5" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="45.332" y1="34.238" x2="45.332" y2="31.862" stroke="#4DBBD5" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="43.832" y1="34.238" x2="46.832" y2="34.238" stroke="#4DBBD5" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="43.832" y1="31.862" x2="46.832" y2="31.862" stroke="#4DBBD5" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="60.69" y1="33.844" x2="60.69" y2="30.834" stroke="#4DBBD5" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="59.19" y1="33.844" x2="62.19" y2="33.844" stroke="#4DBBD5" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="59.19" y1="30.834" x2="62.19" y2="30.834" stroke="#4DBBD5" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="76.051" y1="38.219" x2="76.051" y2="35.099" stroke="#4DBBD5" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="74.551" y1="38.219" x2="77.551" y2="38.219" stroke="#4DBBD5" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="74.551" y1="35.099" x2="77.551" y2="35.099" stroke="#4DBBD5" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="91.409" y1="45.985" x2="91.409" y2="41.692" stroke="#4DBBD5" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="89.909" y1="45.985" x2="92.909" y2="45.985" stroke="#4DBBD5" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="89.909" y1="41.692" x2="92.909" y2="41.692" stroke="#4DBBD5" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="106.507" y1="61.651" x2="106.507" y2="55.907" stroke="#4DBBD5" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="105.007" y1="61.651" x2="108.007" y2="61.651" stroke="#4DBBD5" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="105.007" y1="55.907" x2="108.007" y2="55.907" stroke="#4DBBD5" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="121.868" y1="73.827" x2="121.868" y2="71.492" stroke="#4DBBD5" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="120.368" y1="73.827" x2="123.368" y2="73.827" stroke="#4DBBD5" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="120.368" y1="71.492" x2="123.368" y2="71.492" stroke="#4DBBD5" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="137.226" y1="77.971" x2="137.226" y2="77.579" stroke="#4DBBD5" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="135.726" y1="77.971" x2="138.726" y2="77.971" stroke="#4DBBD5" stroke-width="1" stroke-linecap="butt"/>
+  <line x1="135.726" y1="77.579" x2="138.726" y2="77.579" stroke="#4DBBD5" stroke-width="1" stroke-linecap="butt"/>
+</g>
+<g id="data">
+  <g id="data-1-HCT116">
+    <circle cx="27.5" cy="30.474" r="1.75" fill="#E64B35"/>
+    <circle cx="45.332" cy="32.67" r="1.75" fill="#E64B35"/>
+    <circle cx="60.69" cy="34.686" r="1.75" fill="#E64B35"/>
+    <circle cx="76.051" cy="47.406" r="1.75" fill="#E64B35"/>
+    <circle cx="91.409" cy="67.708" r="1.75" fill="#E64B35"/>
+    <circle cx="106.507" cy="82.8" r="1.75" fill="#E64B35"/>
+    <circle cx="121.868" cy="86.68" r="1.75" fill="#E64B35"/>
+    <circle cx="137.226" cy="84.935" r="1.75" fill="#E64B35"/>
+  </g>
+  <g id="data-2-SW620">
+    <circle cx="27.5" cy="33.492" r="1.75" fill="#4DBBD5"/>
+    <circle cx="45.332" cy="33.05" r="1.75" fill="#4DBBD5"/>
+    <circle cx="60.69" cy="32.339" r="1.75" fill="#4DBBD5"/>
+    <circle cx="76.051" cy="36.659" r="1.75" fill="#4DBBD5"/>
+    <circle cx="91.409" cy="43.839" r="1.75" fill="#4DBBD5"/>
+    <circle cx="106.507" cy="58.779" r="1.75" fill="#4DBBD5"/>
+    <circle cx="121.868" cy="72.659" r="1.75" fill="#4DBBD5"/>
+    <circle cx="137.226" cy="77.775" r="1.75" fill="#4DBBD5"/>
+  </g>
+</g>
+<g id="legend">
+  <circle cx="162.559" cy="7.755" r="1.75" fill="#E64B35"/>
+  <text x="167.559" y="10.261" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-weight="bold" font-size="7" text-anchor="start" fill="#000000">HCT116</text>
+  <circle cx="162.559" cy="16.255" r="1.75" fill="#4DBBD5"/>
+  <text x="167.559" y="18.761" font-family="Arial, Helvetica, 'Liberation Sans', sans-serif" font-weight="bold" font-size="7" text-anchor="start" fill="#000000">SW620</text>
+</g>
+</svg>
