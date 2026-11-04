@@ -1,0 +1,49 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Otto: build",
+      "type": "cargo",
+      "command": "build",
+      "args": ["--workspace"],
+      "problemMatcher": ["$rustc"],
+      "group": { "kind": "build", "isDefault": true }
+    },
+    {
+      "label": "Otto: run app",
+      "type": "cargo",
+      "command": "run",
+      "args": ["-p", "otto-app", "--", "data/data.xlsx"],
+      "problemMatcher": ["$rustc"]
+    },
+    {
+      "label": "Otto: run MCP server (headless, stdio)",
+      "type": "cargo",
+      "command": "run",
+      "args": ["-p", "otto-app", "--", "mcp", "--headless"],
+      "problemMatcher": ["$rustc"]
+    },
+    {
+      "label": "Otto: test",
+      "type": "cargo",
+      "command": "test",
+      "args": ["--workspace"],
+      "problemMatcher": ["$rustc"],
+      "group": { "kind": "test", "isDefault": true }
+    },
+    {
+      "label": "Otto: clippy",
+      "type": "cargo",
+      "command": "clippy",
+      "args": ["--workspace", "--all-targets"],
+      "problemMatcher": ["$rustc"]
+    },
+    {
+      "label": "Otto: graph gallery (render all graph types)",
+      "type": "cargo",
+      "command": "test",
+      "args": ["-p", "otto-plot", "--test", "render"],
+      "problemMatcher": ["$rustc"]
+    }
+  ]
+}

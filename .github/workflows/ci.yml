@@ -1,0 +1,59 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  build:
+    # Otto is Windows-only: it uses Win32 for the clipboard, EMF export and window
+    # placement, and finds R through the registry.
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Install Rust
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          components: clippy, rustfmt
+
+      - name: Cache cargo and build output
+        uses: Swatinem/rust-cache@v2
+
+      - name: Install R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: release
+
+      # Otto keeps its packages in its own library rather than the system one, so
+      # every installation computes with the versions from the pinned snapshot.
+      - name: Cache Otto's R library
+        id: r-library
+        uses: actions/cache@v6
+        with:
+          path: ~/AppData/Local/Otto/r/library
+          key: otto-r-library-${{ runner.os }}-2026-10-01
+
+      - name: Install Otto's R packages
+        if: steps.r-library.outputs.cache-hit != 'true'
+        shell: bash
+        run: |
+          Rscript --vanilla crates/otto-r/r/packages.R \
+            "$LOCALAPPDATA/Otto/r/library" \
+            https://packagemanager.posit.co/cran/2026-10-01 \
+            jsonlite car nortest minpack.lm survival drc multcomp coin
+
+      - name: Check
+        run: cargo check --workspace --all-targets
+
+      - name: Clippy
+        run: cargo clippy --workspace --all-targets -- -D warnings
+
+      - name: Test
+        run: cargo test --workspace

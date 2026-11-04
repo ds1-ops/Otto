@@ -1,0 +1,59 @@
+[workspace]
+resolver = "2"
+members = ["crates/*"]
+default-members = ["crates/otto-app"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+rust-version = "1.85"
+
+[workspace.dependencies]
+otto-core = { path = "crates/otto-core" }
+otto-plot = { path = "crates/otto-plot" }
+otto-engine = { path = "crates/otto-engine" }
+otto-mcp = { path = "crates/otto-mcp" }
+otto-r = { path = "crates/otto-r" }
+
+serde = { version = "1", features = ["derive", "rc"] }
+serde_json = "1"
+schemars = "1.2"
+thiserror = "2"
+anyhow = "1"
+csv = "1.4"
+calamine = "0.36"
+# Already in the tree via calamine; a direct dependency so imports can decode
+# Windows-1252 and UTF-16 files instead of mangling them.
+encoding_rs = "0.8"
+statrs = "0.19"
+ttf-parser = "0.25"
+# Pinned to the resvg/usvg generation that iced 0.14 already uses, so only one copy is built.
+resvg = "0.45"
+usvg = "0.45"
+svg2pdf = "0.13"
+tokio = { version = "1", features = ["rt-multi-thread", "macros", "sync", "net", "io-std", "time"] }
+axum = "0.8"
+rmcp = { version = "3.5", default-features = false }
+iced = { version = "0.14", features = ["svg", "canvas", "tokio", "advanced"] }
+rfd = "0.17"
+dirs = "7"
+base64 = "0.22"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+windows = "0.62"
+insta = "1.49"
+
+[profile.dev]
+# Our crates: file and line numbers only (readable panics and backtraces) instead of full
+# debug info, which made every compiler cache and .pdb several times larger.
+debug = "line-tables-only"
+
+[profile.dev.package."*"]
+# Dependencies (resvg, iced, wgpu) are much faster with optimizations.
+# No debug info for dependencies: keeps target/ small and linking fast.
+opt-level = 2
+debug = false
+
+[profile.release]
+lto = "thin"

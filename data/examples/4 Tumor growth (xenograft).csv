@@ -1,0 +1,169 @@
+Group,Mouse,Day,Tumor volume (mm3)
+Vehicle,Mouse 01,0,115.5
+Vehicle,Mouse 01,3,152.7
+Vehicle,Mouse 01,7,243.0
+Vehicle,Mouse 01,10,369.5
+Vehicle,Mouse 01,14,567.3
+Vehicle,Mouse 01,17,845.4
+Vehicle,Mouse 01,21,1499.4
+Vehicle,Mouse 02,0,115.3
+Vehicle,Mouse 02,3,146.9
+Vehicle,Mouse 02,7,227.8
+Vehicle,Mouse 02,10,346.1
+Vehicle,Mouse 02,14,473.7
+Vehicle,Mouse 02,17,638.3
+Vehicle,Mouse 02,21,997.1
+Vehicle,Mouse 03,0,115.6
+Vehicle,Mouse 03,3,180.8
+Vehicle,Mouse 03,7,252.6
+Vehicle,Mouse 03,10,368.4
+Vehicle,Mouse 03,14,593.5
+Vehicle,Mouse 03,17,783.0
+Vehicle,Mouse 03,21,1336.5
+Vehicle,Mouse 04,0,123.4
+Vehicle,Mouse 04,3,168.8
+Vehicle,Mouse 04,7,254.7
+Vehicle,Mouse 04,10,422.9
+Vehicle,Mouse 04,14,669.5
+Vehicle,Mouse 04,17,855.8
+Vehicle,Mouse 04,21,1428.6
+Vehicle,Mouse 05,0,162.3
+Vehicle,Mouse 05,3,226.3
+Vehicle,Mouse 05,7,376.3
+Vehicle,Mouse 05,10,512.7
+Vehicle,Mouse 05,14,954.4
+Vehicle,Mouse 05,17,1233.5
+Vehicle,Mouse 05,21,1906.5
+Vehicle,Mouse 06,0,121.5
+Vehicle,Mouse 06,3,175.0
+Vehicle,Mouse 06,7,268.5
+Vehicle,Mouse 06,10,358.2
+Vehicle,Mouse 06,14,472.0
+Vehicle,Mouse 06,17,811.1
+Vehicle,Mouse 06,21,1110.1
+Vehicle,Mouse 07,0,121.7
+Vehicle,Mouse 07,3,167.1
+Vehicle,Mouse 07,7,221.5
+Vehicle,Mouse 07,10,286.5
+Vehicle,Mouse 07,14,405.0
+Vehicle,Mouse 07,17,607.6
+Vehicle,Mouse 07,21,765.4
+Vehicle,Mouse 08,0,101.0
+Vehicle,Mouse 08,3,126.7
+Vehicle,Mouse 08,7,189.8
+Vehicle,Mouse 08,10,261.2
+Vehicle,Mouse 08,14,443.7
+Vehicle,Mouse 08,17,570.0
+Vehicle,Mouse 08,21,866.9
+Drug 10 mg/kg,Mouse 09,0,114.9
+Drug 10 mg/kg,Mouse 09,3,145.5
+Drug 10 mg/kg,Mouse 09,7,201.2
+Drug 10 mg/kg,Mouse 09,10,293.5
+Drug 10 mg/kg,Mouse 09,14,480.7
+Drug 10 mg/kg,Mouse 09,17,584.4
+Drug 10 mg/kg,Mouse 09,21,820.2
+Drug 10 mg/kg,Mouse 10,0,116.3
+Drug 10 mg/kg,Mouse 10,3,143.7
+Drug 10 mg/kg,Mouse 10,7,197.9
+Drug 10 mg/kg,Mouse 10,10,237.5
+Drug 10 mg/kg,Mouse 10,14,291.5
+Drug 10 mg/kg,Mouse 10,17,384.3
+Drug 10 mg/kg,Mouse 10,21,493.6
+Drug 10 mg/kg,Mouse 11,0,167.5
+Drug 10 mg/kg,Mouse 11,3,222.8
+Drug 10 mg/kg,Mouse 11,7,316.1
+Drug 10 mg/kg,Mouse 11,10,433.0
+Drug 10 mg/kg,Mouse 11,14,543.7
+Drug 10 mg/kg,Mouse 11,17,664.0
+Drug 10 mg/kg,Mouse 11,21,944.9
+Drug 10 mg/kg,Mouse 12,0,99.6
+Drug 10 mg/kg,Mouse 12,3,133.1
+Drug 10 mg/kg,Mouse 12,7,177.4
+Drug 10 mg/kg,Mouse 12,10,213.5
+Drug 10 mg/kg,Mouse 12,14,299.5
+Drug 10 mg/kg,Mouse 12,17,424.4
+Drug 10 mg/kg,Mouse 12,21,587.7
+Drug 10 mg/kg,Mouse 13,0,113.4
+Drug 10 mg/kg,Mouse 13,3,139.3
+Drug 10 mg/kg,Mouse 13,7,196.6
+Drug 10 mg/kg,Mouse 13,10,207.1
+Drug 10 mg/kg,Mouse 13,14,341.6
+Drug 10 mg/kg,Mouse 13,17,355.6
+Drug 10 mg/kg,Mouse 13,21,493.8
+Drug 10 mg/kg,Mouse 14,0,111.3
+Drug 10 mg/kg,Mouse 14,3,117.6
+Drug 10 mg/kg,Mouse 14,7,182.6
+Drug 10 mg/kg,Mouse 14,10,253.9
+Drug 10 mg/kg,Mouse 14,14,312.1
+Drug 10 mg/kg,Mouse 14,17,449.2
+Drug 10 mg/kg,Mouse 14,21,629.1
+Drug 10 mg/kg,Mouse 15,0,154.0
+Drug 10 mg/kg,Mouse 15,3,182.1
+Drug 10 mg/kg,Mouse 15,7,214.7
+Drug 10 mg/kg,Mouse 15,10,261.0
+Drug 10 mg/kg,Mouse 15,14,323.8
+Drug 10 mg/kg,Mouse 15,17,396.4
+Drug 10 mg/kg,Mouse 15,21,475.7
+Drug 10 mg/kg,Mouse 16,0,124.4
+Drug 10 mg/kg,Mouse 16,3,152.3
+Drug 10 mg/kg,Mouse 16,7,175.0
+Drug 10 mg/kg,Mouse 16,10,219.5
+Drug 10 mg/kg,Mouse 16,14,318.9
+Drug 10 mg/kg,Mouse 16,17,342.1
+Drug 10 mg/kg,Mouse 16,21,458.7
+Drug 30 mg/kg,Mouse 17,0,136.0
+Drug 30 mg/kg,Mouse 17,3,155.4
+Drug 30 mg/kg,Mouse 17,7,167.1
+Drug 30 mg/kg,Mouse 17,10,179.7
+Drug 30 mg/kg,Mouse 17,14,232.2
+Drug 30 mg/kg,Mouse 17,17,234.1
+Drug 30 mg/kg,Mouse 17,21,314.0
+Drug 30 mg/kg,Mouse 18,0,121.6
+Drug 30 mg/kg,Mouse 18,3,128.4
+Drug 30 mg/kg,Mouse 18,7,160.5
+Drug 30 mg/kg,Mouse 18,10,201.0
+Drug 30 mg/kg,Mouse 18,14,233.5
+Drug 30 mg/kg,Mouse 18,17,212.0
+Drug 30 mg/kg,Mouse 18,21,277.0
+Drug 30 mg/kg,Mouse 19,0,144.1
+Drug 30 mg/kg,Mouse 19,3,150.1
+Drug 30 mg/kg,Mouse 19,7,147.5
+Drug 30 mg/kg,Mouse 19,10,186.1
+Drug 30 mg/kg,Mouse 19,14,169.6
+Drug 30 mg/kg,Mouse 19,17,209.2
+Drug 30 mg/kg,Mouse 19,21,205.2
+Drug 30 mg/kg,Mouse 20,0,128.4
+Drug 30 mg/kg,Mouse 20,3,153.4
+Drug 30 mg/kg,Mouse 20,7,157.5
+Drug 30 mg/kg,Mouse 20,10,171.0
+Drug 30 mg/kg,Mouse 20,14,177.3
+Drug 30 mg/kg,Mouse 20,17,189.8
+Drug 30 mg/kg,Mouse 20,21,206.7
+Drug 30 mg/kg,Mouse 21,0,118.5
+Drug 30 mg/kg,Mouse 21,3,134.4
+Drug 30 mg/kg,Mouse 21,7,162.5
+Drug 30 mg/kg,Mouse 21,10,148.3
+Drug 30 mg/kg,Mouse 21,14,187.7
+Drug 30 mg/kg,Mouse 21,17,204.4
+Drug 30 mg/kg,Mouse 21,21,220.6
+Drug 30 mg/kg,Mouse 22,0,103.1
+Drug 30 mg/kg,Mouse 22,3,142.0
+Drug 30 mg/kg,Mouse 22,7,149.3
+Drug 30 mg/kg,Mouse 22,10,170.9
+Drug 30 mg/kg,Mouse 22,14,187.6
+Drug 30 mg/kg,Mouse 22,17,232.0
+Drug 30 mg/kg,Mouse 22,21,250.2
+Drug 30 mg/kg,Mouse 23,0,109.0
+Drug 30 mg/kg,Mouse 23,3,140.6
+Drug 30 mg/kg,Mouse 23,7,163.1
+Drug 30 mg/kg,Mouse 23,10,163.1
+Drug 30 mg/kg,Mouse 23,14,217.9
+Drug 30 mg/kg,Mouse 23,17,219.2
+Drug 30 mg/kg,Mouse 23,21,326.6
+Drug 30 mg/kg,Mouse 24,0,106.4
+Drug 30 mg/kg,Mouse 24,3,116.9
+Drug 30 mg/kg,Mouse 24,7,110.9
+Drug 30 mg/kg,Mouse 24,10,127.0
+Drug 30 mg/kg,Mouse 24,14,131.8
+Drug 30 mg/kg,Mouse 24,17,148.4
+Drug 30 mg/kg,Mouse 24,21,166.7

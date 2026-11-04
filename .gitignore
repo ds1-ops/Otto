@@ -1,0 +1,25 @@
+# Spreadsheets dropped into data/: real measurements must never be committed.
+# The sample workbook is already tracked and is generated, not measured
+# (scripts/make-sample-data.py), so this does not affect it.
+/data/*.xlsx
+
+/target
+/dist
+
+# Scratch output from manual test runs (figures, reports, project files)
+/test-run
+
+# Project files written into the repo (example_project writes "Otto examples.otto" here)
+*.otto
+# ...except the worked example that ships with the repo.
+!/examples/*.otto
+
+# Claude Code local overrides
+.claude/settings.local.json
+
+# OS / editor noise
+Thumbs.db
+desktop.ini
+.DS_Store
+*.swp
+.idea/

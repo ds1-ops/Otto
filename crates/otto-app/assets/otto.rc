@@ -1,0 +1,3 @@
+// The icon of otto.exe (Explorer, taskbar pins, shortcuts), generated from otto.svg by
+// `cargo run -p otto-app --example make_icons`.
+1 ICON "otto.ico"

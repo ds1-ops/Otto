@@ -1,0 +1,15 @@
+[package]
+name = "otto-core"
+description = "Otto data model: multivariable tables, graph/analysis specs, import and project files"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+serde.workspace = true
+serde_json.workspace = true
+schemars.workspace = true
+thiserror.workspace = true
+csv.workspace = true
+calamine.workspace = true
+encoding_rs.workspace = true

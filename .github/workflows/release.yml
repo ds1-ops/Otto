@@ -1,0 +1,41 @@
+name: Release
+
+# Tag a version to publish it:  git tag v0.1.0 && git push origin v0.1.0
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Install Rust
+        uses: dtolnay/rust-toolchain@stable
+
+      - uses: Swatinem/rust-cache@v2
+
+      # Builds target\release\otto.exe, then stages it with the manifest and icon
+      # into dist\otto.mcpb, the Claude desktop extension.
+      - name: Build the app and the Claude extension
+        run: powershell -ExecutionPolicy Bypass -File packaging\build-extension.ps1
+
+      - name: Publish the release
+        uses: softprops/action-gh-release@v3
+        with:
+          draft: true
+          generate_release_notes: true
+          files: |
+            target/release/otto.exe
+            dist/otto.mcpb
+          body: |
+            Windows only. Statistics additionally need R 4.x, see the README.
+
+            - `otto.exe` — the app, no installer
+            - `otto.mcpb` — the Claude Desktop extension: double-click to install

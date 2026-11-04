@@ -1,0 +1,37 @@
+Group,Mouse,Time (days),Event
+Vehicle,S001,11.7,0
+Vehicle,S002,10.2,0
+Vehicle,S003,35.0,1
+Vehicle,S004,19.9,1
+Vehicle,S005,38.4,1
+Vehicle,S006,30.2,1
+Vehicle,S007,23.2,1
+Vehicle,S008,35.5,1
+Vehicle,S009,14.1,1
+Vehicle,S010,9.6,1
+Vehicle,S011,28.4,1
+Vehicle,S012,20.5,1
+Low dose,S013,18.8,1
+Low dose,S014,36.4,1
+Low dose,S015,26.3,1
+Low dose,S016,17.3,1
+Low dose,S017,57.4,1
+Low dose,S018,48.5,1
+Low dose,S019,31.8,1
+Low dose,S020,24.2,0
+Low dose,S021,34.3,1
+Low dose,S022,37.6,1
+Low dose,S023,15.1,1
+Low dose,S024,34.5,1
+High dose,S025,36.8,1
+High dose,S026,60.0,0
+High dose,S027,56.8,1
+High dose,S028,23.9,1
+High dose,S029,33.7,1
+High dose,S030,46.5,1
+High dose,S031,42.0,0
+High dose,S032,7.0,1
+High dose,S033,39.0,1
+High dose,S034,60.0,0
+High dose,S035,16.0,1
+High dose,S036,17.5,1

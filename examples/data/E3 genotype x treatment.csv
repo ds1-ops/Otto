@@ -1,0 +1,33 @@
+Genotype,Treatment,Mouse,Histology score
+WT,Vehicle,M001,7.82
+WT,Vehicle,M002,7.96
+WT,Vehicle,M003,7.67
+WT,Vehicle,M004,7.32
+WT,Vehicle,M005,7.79
+WT,Vehicle,M006,7.9
+WT,Vehicle,M007,6.17
+WT,Vehicle,M008,5.8
+WT,Cmpd A,M009,1.44
+WT,Cmpd A,M010,4.04
+WT,Cmpd A,M011,3.54
+WT,Cmpd A,M012,2.8
+WT,Cmpd A,M013,4.77
+WT,Cmpd A,M014,2.99
+WT,Cmpd A,M015,3.28
+WT,Cmpd A,M016,3.36
+Tnf-KO,Vehicle,M017,3.95
+Tnf-KO,Vehicle,M018,1.22
+Tnf-KO,Vehicle,M019,2.93
+Tnf-KO,Vehicle,M020,2.86
+Tnf-KO,Vehicle,M021,4.24
+Tnf-KO,Vehicle,M022,3.29
+Tnf-KO,Vehicle,M023,5.97
+Tnf-KO,Vehicle,M024,4.07
+Tnf-KO,Cmpd A,M025,4.22
+Tnf-KO,Cmpd A,M026,3.83
+Tnf-KO,Cmpd A,M027,4.82
+Tnf-KO,Cmpd A,M028,5.09
+Tnf-KO,Cmpd A,M029,4.63
+Tnf-KO,Cmpd A,M030,4.43
+Tnf-KO,Cmpd A,M031,3.87
+Tnf-KO,Cmpd A,M032,3.05

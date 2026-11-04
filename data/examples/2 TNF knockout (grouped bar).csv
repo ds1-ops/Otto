@@ -1,0 +1,31 @@
+Genotype,Treatment,Mouse,TNF-alpha (pg/mL)
+WT,Vehicle,M01,36.9
+WT,Vehicle,M02,6.9
+WT,Vehicle,M03,55.5
+WT,Vehicle,M04,40.2
+WT,Vehicle,M05,45.3
+WT,LPS,M06,1513.7
+WT,LPS,M07,1285.4
+WT,LPS,M08,1126.2
+WT,LPS,M09,1257.7
+WT,LPS,M10,1216.1
+WT,LPS + inhibitor,M11,444.0
+WT,LPS + inhibitor,M12,478.8
+WT,LPS + inhibitor,M13,571.7
+WT,LPS + inhibitor,M14,484.0
+WT,LPS + inhibitor,M15,582.0
+KO,Vehicle,M16,41.6
+KO,Vehicle,M17,35.1
+KO,Vehicle,M18,21.5
+KO,Vehicle,M19,35.2
+KO,Vehicle,M20,56.4
+KO,LPS,M21,503.8
+KO,LPS,M22,587.5
+KO,LPS,M23,412.3
+KO,LPS,M24,649.9
+KO,LPS,M25,368.5
+KO,LPS + inhibitor,M26,357.1
+KO,LPS + inhibitor,M27,368.7
+KO,LPS + inhibitor,M28,429.2
+KO,LPS + inhibitor,M29,405.4
+KO,LPS + inhibitor,M30,352.0

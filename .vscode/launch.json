@@ -1,0 +1,25 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Otto app",
+      "type": "cppvsdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/target/debug/otto.exe",
+      "args": ["${workspaceFolder}/data/data.xlsx"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "preLaunchTask": "Otto: build"
+    },
+    {
+      "name": "Otto MCP server (headless)",
+      "type": "cppvsdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/target/debug/otto.exe",
+      "args": ["mcp", "--headless"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "preLaunchTask": "Otto: build"
+    }
+  ]
+}

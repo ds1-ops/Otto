@@ -1,0 +1,25 @@
+Donor,Treatment,IL-6 (pg/mL)
+D01,Vehicle,51.0
+D01,LPS,3029.1
+D01,LPS + Dex,545.8
+D01,LPS + Cmpd A,1260.3
+D02,Vehicle,79.3
+D02,LPS,3467.6
+D02,LPS + Dex,932.7
+D02,LPS + Cmpd A,1787.5
+D03,Vehicle,30.8
+D03,LPS,1647.6
+D03,LPS + Dex,334.2
+D03,LPS + Cmpd A,581.1
+D04,Vehicle,39.8
+D04,LPS,2041.5
+D04,LPS + Dex,647.5
+D04,LPS + Cmpd A,1064.9
+D05,Vehicle,80.3
+D05,LPS,5106.1
+D05,LPS + Dex,958.0
+D05,LPS + Cmpd A,2372.0
+D06,Vehicle,36.9
+D06,LPS,2161.9
+D06,LPS + Dex,448.8
+D06,LPS + Cmpd A,745.2
