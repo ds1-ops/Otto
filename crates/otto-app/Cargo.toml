@@ -1,0 +1,38 @@
+[package]
+name = "otto-app"
+description = "Otto desktop app (Prism-style, dark mode)"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[lib]
+path = "src/lib.rs"
+
+[[bin]]
+name = "otto"
+path = "src/main.rs"
+
+[dependencies]
+otto-core.workspace = true
+otto-engine.workspace = true
+otto-plot.workspace = true
+otto-mcp.workspace = true
+otto-r.workspace = true
+iced.workspace = true
+resvg.workspace = true
+rfd.workspace = true
+tokio.workspace = true
+anyhow.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true
+serde_json.workspace = true
+serde.workspace = true
+
+[build-dependencies]
+embed-resource = "3"
+
+[dev-dependencies]
+iced_test = "0.14"
+
+[target.'cfg(windows)'.dependencies]
+windows = { workspace = true, features = ["Win32_Foundation", "Win32_Graphics_Gdi", "Win32_UI_WindowsAndMessaging"] }

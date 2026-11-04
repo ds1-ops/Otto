@@ -1,0 +1,12 @@
+[package]
+name = "otto-r"
+description = "Otto's statistics engine: R, run as a persistent worker process; Otto lays out what R computes"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+dirs.workspace = true

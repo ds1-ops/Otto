@@ -1,0 +1,18 @@
+[package]
+name = "otto-engine"
+description = "Otto command bus: every user action as a serializable Command, applied with undo/redo"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+otto-core.workspace = true
+otto-r.workspace = true
+otto-plot.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+schemars.workspace = true
+thiserror.workspace = true
+
+[target.'cfg(windows)'.dependencies]
+windows = { workspace = true, features = ["Win32_Foundation", "Win32_Graphics_Gdi", "Win32_System_DataExchange", "Win32_System_Memory", "Win32_System_Ole"] }

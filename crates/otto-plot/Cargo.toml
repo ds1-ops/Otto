@@ -1,0 +1,23 @@
+[package]
+name = "otto-plot"
+description = "Otto plot engine: Prism-style scenes rendered to SVG, PDF, PNG and EMF, plus R code export"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+otto-core.workspace = true
+statrs.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+csv.workspace = true
+resvg.workspace = true
+usvg.workspace = true
+svg2pdf.workspace = true
+
+[target.'cfg(windows)'.dependencies]
+windows = { workspace = true, features = ["Win32_Foundation", "Win32_Graphics_Gdi"] }
+
+[dev-dependencies]
+insta.workspace = true

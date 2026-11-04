@@ -1,0 +1,26 @@
+{
+  "manifest_version": "0.3",
+  "name": "otto",
+  "display_name": "Otto",
+  "version": "0.1.0",
+  "description": "Prism-style scientific graphs: Claude builds, analyses and exports them in your open Otto window",
+  "long_description": "Otto is a GraphPad Prism-style plotting app. With this extension Claude can do everything a user can do in Otto: import multivariable tables, make quick graphs, run t tests and one-way ANOVA on final graphs, and export vector graphics, plotted data and R code.\n\nSetup:\n- Open the Otto app and switch on \"Claude MCP\" at the top right.\n- Then start (or restart) Claude desktop.\n\nThe extension connects to the open Otto window, so you watch Claude work live. If Otto isn't open with Claude MCP on when Claude starts, Claude gets its own invisible Otto project instead.",
+  "author": {
+    "name": "Dominic Schwarz"
+  },
+  "icon": "icon.png",
+  "license": "MIT",
+  "keywords": ["graphs", "statistics", "prism", "science", "plotting"],
+  "server": {
+    "type": "binary",
+    "entry_point": "server/otto.exe",
+    "mcp_config": {
+      "command": "${__dirname}/server/otto.exe",
+      "args": ["mcp"]
+    }
+  },
+  "tools_generated": true,
+  "compatibility": {
+    "platforms": ["win32"]
+  }
+}
