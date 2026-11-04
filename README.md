@@ -7,9 +7,11 @@ A GraphPad Prism–style plotting app written in Rust: dark UI, publication-read
 vector graphs, and full Claude/MCP integration. Every button is also an MCP
 tool, so Claude can build, adjust and export graphs while you watch.
 
-> **Windows only.** Otto uses the Win32 API for the clipboard, EMF export and
-> window placement, and finds R through the Windows registry. It does not build
-> or run on macOS or Linux today.
+> **Early alpha (0.1), Windows only.** Otto is a working concept rather than
+> finished software: expect bugs, and check anything you intend to publish. It
+> uses the Win32 API for the clipboard, EMF export and window placement, and finds
+> R through the Windows registry, so it does not build or run on macOS or Linux
+> today.
 
 ![A final graph with a one-way ANOVA drawn on it](docs/images/final-graph.png)
 

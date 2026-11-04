@@ -16,7 +16,7 @@ jobs:
     runs-on: windows-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Install Rust
         uses: dtolnay/rust-toolchain@stable
@@ -35,7 +35,7 @@ jobs:
       # every installation computes with the versions from the pinned snapshot.
       - name: Cache Otto's R library
         id: r-library
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: ~/AppData/Local/Otto/r/library
           key: otto-r-library-${{ runner.os }}-2026-10-01
