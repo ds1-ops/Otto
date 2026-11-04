@@ -1,3 +1,8 @@
+# Spreadsheets dropped into data/: real measurements must never be committed.
+# The sample workbook is already tracked and is generated, not measured
+# (scripts/make-sample-data.py), so this does not affect it.
+/data/*.xlsx
+
 /target
 /dist
 
